@@ -1,0 +1,22 @@
+{
+    "waterParticlePointSprite": {
+        "uDiffuseTexture": "textures/particle_blurred.png",
+        "particleSizeScale" : 2.5,
+        "weightScale": 0.05,
+        "weightRangeShift": 0.8,
+        "weightCutoff": 0.7
+    },
+    "waterParticleToScreen": {
+        "alphaThreshold": 0.7
+    },
+    "otherParticlePointSprite": {
+        "uDiffuseTexture": "textures/particle_brush.png",
+        "particleSizeScale" : 3.2
+    },
+    "otherParticleToScreen": {
+        "alphaThreshold": 0.8
+    },
+    "paper": {
+        "uDiffuseTexture": "textures/canvas.png"
+    }
+}
