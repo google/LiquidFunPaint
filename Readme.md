@@ -27,7 +27,8 @@ Start playing and see what you can create!
 ## Releases
 
 Releases of LiquidFun Paint are available for download from the
-[Google Play Store][].
+[Google Play Store][]. The Play Store release is currently restricted to the
+United States.
 
 LiquidFun Paint source code is available for download from
 http://github.com/google/liquidfunpaint.
