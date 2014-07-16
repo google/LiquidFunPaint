@@ -1,0 +1,3 @@
+[submodule "liquidfun"]
+	path = liquidfun
+	url = http://github.com/google/liquidfun
