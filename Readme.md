@@ -1,4 +1,4 @@
-LiquidFun Paint Version [1.0][]
+LiquidFun Paint Version 1.0.0
 
 ## Overview
 
