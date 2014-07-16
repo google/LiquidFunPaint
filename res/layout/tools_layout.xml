@@ -1,0 +1,502 @@
+<!-- Copyright (c) 2014 Google, Inc. All rights reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+ -->
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/world"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/palett" />
+
+    <!-- Palette for rigid and wall particles  -->
+
+    <ImageView
+        android:id="@+id/color_rigid_1"
+        android:contentDescription="@string/color_rigid_1"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/selecting"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_1" />
+
+    <ImageView
+        android:id="@+id/color_rigid_2"
+        android:contentDescription="@string/color_rigid_2"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_1"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_2" />
+
+    <ImageView
+        android:id="@+id/color_rigid_3"
+        android:contentDescription="@string/color_rigid_3"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_2"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_3" />
+
+    <ImageView
+        android:id="@+id/color_rigid_4"
+        android:contentDescription="@string/color_rigid_4"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_3"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_4" />
+
+    <ImageView
+        android:id="@+id/color_rigid_5"
+        android:contentDescription="@string/color_rigid_5"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_4"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_5" />
+
+    <ImageView
+        android:id="@+id/color_rigid_6"
+        android:contentDescription="@string/color_rigid_6"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_5"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_6" />
+
+    <ImageView
+        android:id="@+id/color_rigid_7"
+        android:contentDescription="@string/color_rigid_7"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_6"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_7" />
+
+    <ImageView
+        android:id="@+id/color_rigid_8"
+        android:contentDescription="@string/color_rigid_8"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_7"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_8" />
+
+    <ImageView
+        android:id="@+id/color_rigid_9"
+        android:contentDescription="@string/color_rigid_9"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_8"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_9" />
+
+    <ImageView
+        android:id="@+id/color_rigid_10"
+        android:contentDescription="@string/color_rigid_10"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_9"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_10" />
+
+    <ImageView
+        android:id="@+id/color_rigid_11"
+        android:contentDescription="@string/color_rigid_11"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_10"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_11" />
+
+    <ImageView
+        android:id="@+id/color_rigid_12"
+        android:contentDescription="@string/color_rigid_12"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_11"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_rigid_12" />
+
+    <ImageView
+        android:id="@+id/color_rigid_end"
+        android:contentDescription="@null"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_rigid_12"
+        android:scaleType="fitStart"
+        android:visibility="gone"
+        android:src="@drawable/palette_end" />
+
+    <!-- Palette for water particles  -->
+
+    <ImageView
+        android:id="@+id/color_water_1"
+        android:contentDescription="@string/color_water_1"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/selecting"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_1" />
+
+    <ImageView
+        android:id="@+id/color_water_2"
+        android:contentDescription="@string/color_water_2"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_1"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_2" />
+
+    <ImageView
+        android:id="@+id/color_water_3"
+        android:contentDescription="@string/color_water_3"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_2"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_3" />
+
+    <ImageView
+        android:id="@+id/color_water_4"
+        android:contentDescription="@string/color_water_4"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_3"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_4" />
+
+    <ImageView
+        android:id="@+id/color_water_5"
+        android:contentDescription="@string/color_water_5"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_4"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_5" />
+
+    <ImageView
+        android:id="@+id/color_water_6"
+        android:contentDescription="@string/color_water_6"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_5"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_6" />
+
+    <ImageView
+        android:id="@+id/color_water_7"
+        android:contentDescription="@string/color_water_7"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_6"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_7" />
+
+    <ImageView
+        android:id="@+id/color_water_8"
+        android:contentDescription="@string/color_water_8"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_7"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_8" />
+
+    <ImageView
+        android:id="@+id/color_water_9"
+        android:contentDescription="@string/color_water_9"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_8"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_9" />
+
+    <ImageView
+        android:id="@+id/color_water_10"
+        android:contentDescription="@string/color_water_10"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_9"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_10" />
+
+    <ImageView
+        android:id="@+id/color_water_11"
+        android:contentDescription="@string/color_water_11"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_10"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_11" />
+
+    <ImageView
+        android:id="@+id/color_water_12"
+        android:contentDescription="@string/color_water_12"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_11"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickPalette"
+        android:src="@drawable/color_water_12" />
+
+    <ImageView
+        android:id="@+id/color_water_end"
+        android:contentDescription="@null"
+        android:layout_width="@dimen/color_width"
+        android:layout_height="@dimen/color_height"
+        android:layout_alignBottom="@+id/selecting"
+        android:layout_alignTop="@+id/selecting"
+        android:layout_toRightOf="@+id/color_water_12"
+        android:scaleType="fitStart"
+        android:visibility="gone"
+        android:src="@drawable/palette_end" />
+
+    <!-- Toolbar -->
+
+    <ImageView
+        android:id="@+id/palett"
+        android:contentDescription="@null"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_leftpanel" />
+
+    <ImageView
+        android:id="@+id/selecting"
+        android:contentDescription="@null"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/hand"
+        android:src="@drawable/selecting" />
+
+    <ImageView
+        android:id="@+id/button_restart"
+        android:contentDescription="@string/button_restart"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/button_restart" />
+
+    <View
+        android:id="@+id/tool_separator"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_restart" />
+
+    <ImageView
+        android:id="@+id/hand"
+        android:contentDescription="@string/hand"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eraser"
+        android:layout_marginBottom="@dimen/tool_margin_bottom"
+        android:clickable="true"
+        android:onClick="onClickTool"
+        android:src="@drawable/hand" />
+
+    <ImageView
+        android:id="@+id/eraser"
+        android:contentDescription="@string/eraser"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_height"
+        android:layout_below="@+id/water"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/tool_margin_bottom"
+        android:clickable="true"
+        android:onClick="onClickTool"
+        android:src="@drawable/eraser" />
+
+    <ImageView
+        android:id="@+id/water"
+        android:contentDescription="@string/water"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_height"
+        android:layout_below="@+id/rigid"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/tool_margin_bottom"
+        android:clickable="true"
+        android:onClick="onClickTool"
+        android:src="@drawable/water_6" />
+
+    <ImageView
+        android:id="@+id/rigid"
+        android:contentDescription="@string/rigid"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_height"
+        android:layout_below="@+id/pencil"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/tool_margin_bottom"
+        android:clickable="true"
+        android:onClick="onClickTool"
+        android:src="@drawable/rigid_9" />
+
+    <ImageView
+        android:id="@+id/pencil"
+        android:contentDescription="@string/pencil"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_height"
+        android:layout_below="@+id/tool_separator"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/tool_margin_bottom"
+        android:clickable="true"
+        android:onClick="onClickTool"
+        android:src="@drawable/pencil_8" />
+
+    <!-- Debug FPS view -->
+
+    <TextView
+        android:id="@+id/fps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#808080"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClickDebug" />
+
+</RelativeLayout>

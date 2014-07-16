@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2014 Google, Inc. All rights reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+ -->
+<resources>
+
+    <color name="color_rigid_1">#e89a3a</color>
+    <color name="color_rigid_2">#e44426</color>
+    <color name="color_rigid_3">#b5303b</color>
+    <color name="color_rigid_4">#6a2531</color>
+    <color name="color_rigid_5">#d8336e</color>
+    <color name="color_rigid_6">#ad4893</color>
+    <color name="color_rigid_7">#522fa6</color>
+    <color name="color_rigid_8">#2547b0</color>
+    <color name="color_rigid_9">#009100</color>
+    <color name="color_rigid_10">#06a481</color>
+    <color name="color_rigid_11">#563c3b</color>
+    <color name="color_rigid_12">#0a0a0a</color>
+    <color name="color_water_1">#dcb8ff</color>
+    <color name="color_water_2">#b9b7ff</color>
+    <color name="color_water_3">#8c9dff</color>
+    <color name="color_water_4">#71a0f0</color>
+    <color name="color_water_5">#55abff</color>
+    <color name="color_water_6">#63cee4</color>
+    <color name="color_water_7">#75ccc7</color>
+    <color name="color_water_8">#98e1c8</color>
+    <color name="color_water_9">#b4e5af</color>
+    <color name="color_water_10">#c0eba8</color>
+    <color name="color_water_11">#e7f39f</color>
+    <color name="color_water_12">#f7eb83</color>
+    <color name="splash_bg">#f8da96</color>
+    <item type="integer" name="num_colors">12</item>
+
+    <item type="string" name="default_pencil_color">color_rigid_8</item>
+    <item type="string" name="default_rigid_color">color_rigid_9</item>
+    <item type="string" name="default_water_color">color_water_6</item>
+
+</resources>

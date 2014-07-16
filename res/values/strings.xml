@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2014 Google, Inc. All rights reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+ -->
+<resources>
+
+    <string name="app_name">LiquidFun Paint</string>
+
+    <!-- Tool bar -->
+    <string name="button_restart">Erase everything</string>
+    <string name="hand">Drag</string>
+    <string name="eraser">Erase</string>
+    <string name="water">Watery paint</string>
+    <string name="rigid">Dry paint</string>
+    <string name="pencil">Sticky paint</string>
+
+    <!-- Color palettes -->
+    <string name="color_rigid_1">Honey</string>
+    <string name="color_rigid_2">Vermilion</string>
+    <string name="color_rigid_3">Crimson</string>
+    <string name="color_rigid_4">Mahogany</string>
+    <string name="color_rigid_5">Rose</string>
+    <string name="color_rigid_6">Petunia</string>
+    <string name="color_rigid_7">Violet</string>
+    <string name="color_rigid_8">Sapphire</string>
+    <string name="color_rigid_9">Grass</string>
+    <string name="color_rigid_10">Turquoise</string>
+    <string name="color_rigid_11">Sable</string>
+    <string name="color_rigid_12">Slate</string>
+
+    <string name="color_water_1">Lilac</string>
+    <string name="color_water_2">Periwinkle</string>
+    <string name="color_water_3">Cornflower</string>
+    <string name="color_water_4">Ocean</string>
+    <string name="color_water_5">Cobalt</string>
+    <string name="color_water_6">Aqua</string>
+    <string name="color_water_7">Teal</string>
+    <string name="color_water_8">Seafoam</string>
+    <string name="color_water_9">Mist</string>
+    <string name="color_water_10">Lime</string>
+    <string name="color_water_11">Daffodil</string>
+    <string name="color_water_12">Lemon</string>
+
+</resources>
