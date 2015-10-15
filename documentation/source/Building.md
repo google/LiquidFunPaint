@@ -85,5 +85,5 @@ You can then sign the apk with an appropriate key and dispatch it onto a device.
   [managing avds]: http://developer.android.com/tools/devices/managing-avds.html
   [ADT]: http://developer.android.com/tools/sdk/eclipse-adt.html
   [Apache Ant]: http://ant.apache.org/
-  [SWIG]: http//www.swig.org
+  [SWIG]: http://www.swig.org
 
