@@ -50,7 +50,7 @@ if you wish. Please refer to the [LiquidFun Readme][] for more details.
 
 
   [Google Play Store]: http://play.google.com/store/apps/details?id=com.google.fpl.liquidfunpaint
-  [LiquidFun Paint Google Group]: http://group.google.com/group/liquidfunpaint
+  [LiquidFun Paint Google Group]: http://groups.google.com/group/liquidfunpaint
   [LiquidFun Paint Issues Tracker]: http://github.com/google/LiquidFunPaint/issues
   [stackoverflow.com]: http://www.stackoverflow.com
   [LiquidFun]: http://google.github.io/liquidfun
